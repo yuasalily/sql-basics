@@ -1,0 +1,24 @@
+{
+  "name": "SQL Basics",
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "customizations": {
+    "vscode": {
+      "extensions": [],
+      "settings": {
+        "files.autoSave": "onFocusChange",
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        "editor.minimap.enabled": false,
+        "editor.fontSize": 16,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.copyWithSyntaxHighlighting": false,
+        "editor.formatOnSave": true,
+        "editor.inlayHints.enabled": "on",
+        "workbench.editor.enablePreview": false,
+        "workbench.editor.enablePreviewFromQuickOpen": false,
+        "workbench.tree.renderIndentGuides": "always"
+      }
+    }
+  },
+  "postCreateCommand": "sudo apt update -y && sudo apt install -y mysql-server-8.0 -f"
+}
