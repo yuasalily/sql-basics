@@ -20,5 +20,6 @@
       }
     }
   },
-  "postCreateCommand": "sudo apt update -y && sudo apt install -y mysql-server-8.0 -f"
+  "postCreateCommand": "sudo apt update -y && sudo apt install -y mysql-server-8.0 -f",
+  "remoteUser": "root"
 }
