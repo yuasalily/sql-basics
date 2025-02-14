@@ -3,7 +3,9 @@
   "image": "mcr.microsoft.com/devcontainers/base:jammy",
   "customizations": {
     "vscode": {
-      "extensions": [],
+      "extensions": [
+        "yzhang.markdown-all-in-one"
+      ],
       "settings": {
         "files.autoSave": "onFocusChange",
         "files.trimFinalNewlines": true,
