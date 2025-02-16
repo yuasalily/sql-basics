@@ -46,7 +46,7 @@ INSERT INTO people (id, first_name, last_name, birth_day) VALUES
 (35, 'William', 'Moore', '1996-11-17');
 
 
-CREATE TABLE IF NOT EXISTS student ( -- peopleが存在しなければ作成
+CREATE TABLE IF NOT EXISTS student ( -- studentが存在しなければ作成
     id INT PRIMARY KEY,
     first_name VARCHAR(20),
     birth_day DATE DEFAULT "2000-5-1"
