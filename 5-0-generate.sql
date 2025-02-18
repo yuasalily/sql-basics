@@ -1,6 +1,8 @@
 CREATE DATABASE IF NOT EXISTS my_db; -- my_dbが存在しなければ作成
 USE my_db;
 
+DROP TABLE IF EXISTS orders; -- テーブルが既に存在していたらレコード初期化のため削除
+
 CREATE TABLE orders (
     id INT AUTO_INCREMENT PRIMARY KEY,
     customer_name VARCHAR(50),
