@@ -70,14 +70,14 @@ INSERT INTO products (product_name, price) VALUES
 INSERT INTO orders (user_id, order_date, total_price) VALUES
 (1, '2024-02-01', 1500.00),
 (2, '2024-02-02', 500.00),
-(3, '2024-02-03', 1200.00),
-(1, '2024-02-04', 800.00),
+(3, '2024-02-03', 800.00),
+(1, '2024-02-04', 600.00),
 (5, '2024-02-05', 80.00),  -- Eve's order
-(6, '2024-02-06', 300.00), -- Frank's order
-(7, '2024-02-07', 250.00), -- Grace's order
-(8, '2024-02-08', 600.00), -- Hank's order
-(9, '2024-02-09', 450.00), -- Ivy's order
-(10, '2024-02-10', 750.00);-- Jack's order
+(6, '2024-02-06', 210.00), -- Frank's order
+(7, '2024-02-07', 200.00), -- Grace's order
+(8, '2024-02-08', 1500.00), -- Hank's order
+(9, '2024-02-09', 1800.00), -- Ivy's order
+(10, '2024-02-10', 550.00);-- Jack's order
 
 -- 注文ごとの商品データ
 INSERT INTO order_items (order_id, product_id, quantity) VALUES
