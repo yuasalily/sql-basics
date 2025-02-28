@@ -4,7 +4,9 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "yzhang.markdown-all-in-one"
+        "yzhang.markdown-all-in-one",
+        "bierner.markdown-mermaid",
+        "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
       ],
       "settings": {
         "files.autoSave": "onFocusChange",
