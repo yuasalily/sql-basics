@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS my_db;
-CREATE DATABASE my_db; -- my_dbが存在しなければ作成
+CREATE DATABASE my_db;
 USE my_db;
 
 CREATE TABLE orders (

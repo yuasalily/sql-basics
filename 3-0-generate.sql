@@ -1,12 +1,18 @@
 DROP DATABASE IF EXISTS my_db;
-CREATE DATABASE my_db; -- my_dbが存在しなければ作成
+CREATE DATABASE my_db;
 USE my_db;
 
-CREATE TABLE IF NOT EXISTS people ( -- peopleが存在しなければ作成
+CREATE TABLE IF NOT EXISTS people (
     id INT PRIMARY KEY,
     first_name VARCHAR(20),
     last_name VARCHAR(20),
     birth_day DATE DEFAULT "1995-5-1"
+);
+
+CREATE TABLE IF NOT EXISTS student (
+    id INT PRIMARY KEY,
+    first_name VARCHAR(20),
+    birth_day DATE DEFAULT "2000-5-1"
 );
 
 INSERT INTO people (id, first_name, last_name, birth_day) VALUES
@@ -47,11 +53,7 @@ INSERT INTO people (id, first_name, last_name, birth_day) VALUES
 (35, 'William', 'Moore', '1996-11-17');
 
 
-CREATE TABLE IF NOT EXISTS student ( -- studentが存在しなければ作成
-    id INT PRIMARY KEY,
-    first_name VARCHAR(20),
-    birth_day DATE DEFAULT "2000-5-1"
-);
+
 
 INSERT INTO student (id, first_name, birth_day) VALUES
 (1, 'Alice', '2002-03-15'),
