@@ -1,7 +1,6 @@
-CREATE DATABASE IF NOT EXISTS my_db; -- my_dbが存在しなければ作成
+DROP DATABASE IF EXISTS my_db;
+CREATE DATABASE my_db; -- my_dbが存在しなければ作成
 USE my_db;
-
-DROP TABLE IF EXISTS sales; -- テーブルが既に存在していたらレコード初期化のため削除
 
 CREATE TABLE sales (
     id INT PRIMARY KEY AUTO_INCREMENT,

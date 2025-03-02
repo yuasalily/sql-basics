@@ -1,4 +1,5 @@
-CREATE DATABASE IF NOT EXISTS my_db; -- my_dbが存在しなければ作成
+DROP DATABASE IF EXISTS my_db;
+CREATE DATABASE my_db; -- my_dbが存在しなければ作成
 USE my_db;
 
 CREATE TABLE IF NOT EXISTS people ( -- peopleが存在しなければ作成
